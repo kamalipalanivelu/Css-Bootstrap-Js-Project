@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER BOOKING</title>
+   
+    <h1>ORDER BOOKING</h1>
+    <style>
+        body{
+            background-image: no-repeat;
+            background-size: 100% ;
+            color: white;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body background="./bg2.jpg">
+    <form action="">
+        
+            Name: <input type="text" id="i1"><br><br>
+            Contact: <input type="number" id="i2"><br><br>
+            Email: <input type="email" id="i3"><br><br>
+            Count: <input type="number" id="i4"><br><br>
+            <input type="button" onclick="validate()" value="Submit">
+            <input type="Reset" value="reset">
+            <script>
+                function validate(){
+                    var n1 = document.getElementById("i1").value;
+                    var n2 = document.getElementById("i2").value;
+                    var n3 = document.getElementById("i3").value;
+                    var n4 = document.getElementById("i4").value;
+                    if ((n1 == "")||(n2 == "")||(n3 == "")||(n4 == "")){
+
+                        alert ("Please fill all the details");
+
+                    }
+                    else {
+                        alert("Successfully submitted your Order");
+                    }
+                }
+            </script>
+
+  
+    </form>
+    
+</body>
+</html>

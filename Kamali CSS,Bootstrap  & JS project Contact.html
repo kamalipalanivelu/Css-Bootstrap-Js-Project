@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <style>
+        .form-control{
+            width: 1000px;
+            height: 30px;
+           
+        }
+
+        body{
+            padding-left: 100px;
+            padding-right: 100px;
+            background-color: rgb(209, 89, 89);
+            
+        }
+
+        div{
+            padding-top: 20px;
+        }
+
+        .bold{
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           font-size: large;
+           font-style: italic;
+           font-weight: bold;
+           
+        }
+
+        .size{
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: medium;
+        }
+    </style>
+</head>
+
+<body>
+    <center><h1>CONTACT</h1></center>
+    <div>
+        <div>
+        <p class="bold">Find us at some address at some place or call us at 05050515-122330</p>
+        <p class="size">
+            We offer full-service catering for any event, large or small. We understand your needs ans we will cater the
+            food to satisfy the biggest criteria of them all, both look and taste.
+        </p>
+        <p class="size">
+            Reserve your booking,Ask for today's special or just send us a message:
+        </p>
+    </div>
+    <form class="form-control">
+        <label for=""></label>
+        <input type="Name" class="form-control" placeholder="NAME" id="F1"><br><br>
+        <label for=""></label>
+        <input type="number" class="form-control" placeholder="HOW MANY PEOPLE" id="F2"><br><br>
+        <label for=""></label>
+        <input type="date" class="form-control" placeholder="21/09/2024" id="F3"><br><br>
+        <label for=""></label>
+        <input type="text" class="form-control" placeholder="MESSAGE/SPECIAL REQUIREMENTS" id="F4"><br><br>
+        <input type="submit" class="form-control" onclick=validate() value="SEND MESSAGE">
+        <script>
+            function validate(){
+                var n1 = document.getElementById("F1").value;
+                var n2 = document.getElementById("F2").value;
+                var n3 = document.getElementById("F3").value;
+                var n4 = document.getElementById("F4").value;
+                if((n1 == "")||(n2 =="")||(n3 == "")||(n4 == "")){
+                    alert("Please fill all the details")
+                }
+                else{
+                    alert("Order Successfully")
+                }
+            }
+        </script>
+
+
+    </form>
+    </div>
+
+</body>
+
+</html>
